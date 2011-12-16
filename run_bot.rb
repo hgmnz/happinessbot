@@ -5,17 +5,25 @@ require 'tweetbot'
 bot = TweetBot.configure do |config|
   config.response_frequency = 1
 
-  config.respond_to_phrase "good morning" do |responses|
-    responses << "And a good morning to you! Have a fantastic day today! Remember how awesome you are!" << "It is a good morning. And the world is better because you are here."<< "Good Morning! You deserve a fantastic day today! Enjoy!"<< "And a wonderful morning to you, too! Every day opens with new possibilities. Enjoy!"<< "Good Morning! Thanks for being awesome. Enjoy your day!" << "Enjoy your day! Life is great, and you make it even better!" << "I hope your day today is wonderful! You deserve it!" << "I hope today is wonderful for you. Thanks for being great!" << "Every day has new potential and possibilities. You deserve to enjoy them!" << "Enjoy your morning! Relax and take a deep breath. Remember you are awesome!"
+  config.respond_to_phrase "burger" do |responses|
+    responses = [
+      %{"Sacred cows make the best hamburger." -Mark Twain},
+      %{"It requires a certain kind of mind to see beauty in a hamburger bun." -Ray Kroc},
+      %{"The journey of a thousand pounds begins with a single burger." -Chris O'Brien},
+      %{"A Hamburger is warm and fragrant and juicy. A hamburger is soft and nonthreatening." -Tom Robbins},
+      %{"Rock and roll is the hamburger that ate the world." -Peter York},
+      %{"Everyone has a right to a university degree in America, even if it's in Hamburger Technology." -Clive James},
+      %{"A grown man is so secure with himself he will go flip burgers to make sure his baby can eat." -Madea},
+      %{"Uuummmm, this is a tasty burger!" -Jules},
+      %{"My brain's the burger and my heart is the charcoal." -Isaac Brock},
+      %{"I would rather be having a burger and beers with my mates but I can't do that when I know I've got to dance." -Michael Flately},
+      %{"I met her at Burger King, we fell in love by the soda machine." -The Ramones},
+      %{"Me burger with I sauce on it, a myself sandwich." -Funkadelic},
+      %{Hamburger are proof that God loves us and wants us to be happy.},
+      %{To some its a burger, to me it's a Support Group.},
+      %{They who eat burger will think burger.}
+    ]
   end
-
-  config.respond_to_phrase "bonjour" do |responses|
-    responses << "Bonjour à vous! C'est une journée fantastique aujourd'hui! Rappelez-vous comme vous êtes génial!" << "C'est une bonne matinée, car le monde est meilleur quand vous êtes ici." << "Bonjour! Vous méritez une journée fantastique aujourd'hui! Amusez-vous!"<< "Et un matin merveilleux pour vous aussi! Chaque jour ouvre de nouvelles possibilités. Amusez-vous!"<< "Bonjour! Merci d'être génial. Profitez de votre journée!" << "Profitez de votre journée! La vie est belle, et vous la rendez encore meilleure!" << "J'espère que votre journée sera merveilleuse! Vous le méritez!" << "J'espère qu'aujourd'hui sera une journée merveilleuse pour vous. Merci d'être là!" << "Chaque jour ouvre des nouvelles portes et vous méritez d'en profiter!" << "Profitez de votre matinée! Détendez-vous et prenez une profonde respiration. N'oubliez pas que vous êtes génial!"
-  end
-
-  # config.respond_to_phrase "good night" do |responses|
-    # responses << "Sweet dreams! I hope your day was great and tomorrow is better!" << "Thanks for the good night wishes! Enjoy your rest and have a great day tomorrow!"
-  # end
 
   config.twitter_auth = TwitterAuth::AuthKeys
 end

@@ -26,7 +26,6 @@ bot = TweetBot.configure do |config|
     %{How do the Rolling Stones like their burgers? Plain – Rolling Stones gather no moss-tard!} <<
     %{How do you insult a hamburger patty? Call it a meatball!} <<
     %{How do you make a hamburger smile? Pickle it gently!} <<
-    %{How far do burgers go in school? Through cowlege (then they get their 450 degrees!)} <<
     %{What did the hamburger say when it pleaded not guilty ? I’ve been flamed!} <<
     %{"You can find your way across this country using burger joints the way a navigator uses stars." -Charles Kuralt} <<
     %{Here's my heart and soul, please grind them into a hamburger, and enjoy. -Meredith Grey} <<
